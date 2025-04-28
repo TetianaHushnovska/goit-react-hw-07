@@ -15,7 +15,7 @@ export default function Contact({ name, number }) {
         </p>
       </div>
       <div>
-        <button>Delete</button>
+        <button className={css.button}>Delete</button>
       </div>
     </div>
   );
