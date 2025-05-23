@@ -3,9 +3,9 @@ import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
 
 export default function ContactList() {
-  const contacts = useSelector((state) => state.contacts.people);
+  const contacts = useSelector((state) => state.contacts.items);
 
-  const filterValue = useSelector((state) => state.filter.name);
+  const filterValue = useSelector((state) => state.filters.name);
   const filteredContacts = contacts.filter((contact) =>
     contact.name.toLowerCase().includes(filterValue.toLowerCase())
   );

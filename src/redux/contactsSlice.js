@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const slice = createSlice({
     name: "contacts",
     initialState: {
-        people: [
+        items: [
       { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
       { id: "id-2", name: "Hermione Kline", number: "443-89-12" },
       { id: "id-3", name: "Eden Clements", number: "645-17-79" },
@@ -12,10 +12,10 @@ const slice = createSlice({
     },
     reducers: {
         addContact: (state, action) => {
-            state.people.push(action.payload);
+            state.items.push(action.payload);
         },
         deleteContact: (state, action) => {
-            state.people =state.people.filter((person) => person.id !== action.payload)
+            state.items =state.items.filter((item) => item.id !== action.payload)
         }
     }
 })
