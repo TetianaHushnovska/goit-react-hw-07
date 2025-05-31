@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import css from "./ContactForm.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsOps";
 
 export default function ContactForm() {
   const dispatch = useDispatch();
